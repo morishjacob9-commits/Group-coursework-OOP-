@@ -1,0 +1,45 @@
+Step 0: Add the Database Dependency
+	1. Go to File > Project Structure > Modules
+	2. Select Dependencies Tab > Click + > JARs or Directories
+	3. Choose the dependency "mysql-connector-j-9.7.0"
+	4. Click Apply then OK
+	5. Go to File > Build > Rebuild
+
+Step 1: Set up the database
+	1. Open Workbench and connect to local instance
+	2. File > New Query Tab
+	3. Open firstbank_setup_db with Notepad, Copy and paste all the queries to the New Query Tab
+	4. Select all the queries (CTRL + A) then execute. Click on the gold spark on the extreme LHS
+
+NOTE: If you had already set up the database, its not necessary to implement this step
+
+Step 2: Open IntelliJ IDE
+	1. Go to File > New > Project
+	2. Give the project a name called "FirstBankUganda"
+	3. When your creating the project, make sure the checkbox "Add sample code" is not checked.
+
+Step 3: Add the packages packages database, models and ui
+	1. Right click the src folder > New > package
+	2. Give the package a name called "database" then press enter
+
+	3. Right click the src folder > New > package
+	4. Give the package a name called "models" then press enter
+
+	5. Right click the src folder > New > package
+	6. Give the package a name called "ui" then press enter
+
+Step 4: Copy and paste the respective java files in their corresponding packages
+	1. Copy "DBConnection" and paste it to the package database. Open this file > Go to Line 10 > Update the password to the one you set for 		MySQL WorkBench
+	2. Copy "Account" and paste it to the package models 
+	3. Copy "CurrentAccount" and paste it to the package models 
+	4. Copy "FixedDepositAccount" and paste it to the package models 
+	5. Copy "JointAccount" and paste it to the package models 
+	6. Copy "SavingsAccount" and paste it to the package models 
+	7. Copy "StudentAccount" and paste it to the package models
+	8. Copy "BankFormApplication" and paste it to the package ui
+
+Step 5: Test & Run the project
+	1. Open the package ui > click on the BankFormApplication > Run
+
+	
+	
